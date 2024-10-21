@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit flow</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- fontawesome-icons -->
+    <script src="https://kit.fontawesome.com/1566b08547.js" crossorigin="anonymous"></script>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!---------------- Nav-section ----------------->
+    <nav class="faq_nav_wrapper">
+        <div class="FAQ_container py-2">
+            <div class="FAQ_wrapper">
+                <div class="left_side ">
+                    <div class="logo ">
+                        <svg width="54" height="28" viewBox="0 0 54 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.7537 1.09009L21.3062 1.57134L19.0563 3.92009L18.6237 3.70634C16.9446 
+                            2.90942 15.1087 2.49732 13.25 2.50009C6.10125 2.50009 0.75 8.26635 0.75 
+                            15.0001C0.75 21.7576 6.2325 27.5001 13.25 27.5001C16.6488 27.5001 20.0175
+                             26.0288 22.285 23.6376L28.465 17.1151L35.4037 9.75259C36.8288 8.23884
+                              38.8075 7.50009 40.75 7.50009C44.8462 7.50009 48.25 10.7901 48.25 
+                              15.0001C48.25 19.0101 44.9875 22.5001 40.75 22.5001C38.3963 22.5001 
+                              36.9875 21.7638 35.1338 19.9326L34.2762 19.0576L33.4663 18.2001L32.5262 
+                              17.1838C32.4683 17.1205 32.3979 17.0698 32.3194 17.0349C32.241 17 
+                              32.1562 16.9816 32.0704 16.9809C31.9845 16.9802 31.8995 16.9972 
+                              31.8205 17.0308C31.7415 17.0644 31.6703 17.114 31.6112 17.1763L29.0462
+                              19.8888C28.9366 20.0045 28.8752 20.1577 28.8748 20.3171C28.8743 20.4765 
+                              28.9347 20.63 29.0438 20.7463L31.4738 23.3388L31.8 23.6726C32.2288 24.1001 
+                              32.6625 24.4913 33.135 24.8638C35.2475 26.5251 37.7313 27.5001 40.75 
+                              27.5001C47.8312 27.5001 53.25 21.7263 53.25 15.0001C53.25 8.1876 
+                              47.7663 2.50009 40.75 2.50009C37.235 2.50009 33.925 3.94385 31.47 
+                              6.6001L28.5275 9.77634L25.1525 13.3813L18.665 20.1838C17.1725 
+                              21.7463 15.28 22.5001 13.25 22.5001C8.9975 22.5001 5.75 19.0188 5.75 
+                              15.0001C5.75 10.9763 8.99 7.50009 13.25 7.50009L13.5437 7.50634C14.045 
+                              7.52634 14.5938 7.59635 15.0875 7.7151L15.3175 7.77509L13.0388 10.0501L12.7088 
+                              10.3826C12.6254 10.4666 12.5676 10.5725 12.542 10.688C12.5165 10.8036 12.5242 
+                              10.924 12.5644 11.0353C12.6046 11.1466 12.6756 11.2442 12.7691 11.3167C12.8626 
+                              11.3893 12.9747 11.4338 13.0925 11.4451L20.4963 12.1601L22.5525 12.3463C22.6407 
+                              12.3538 22.7295 12.3425 22.813 12.3131C22.8965 12.2837 22.9728 12.2369 23.0368 
+                              12.1758C23.1009 12.1147 23.1512 12.0407 23.1845 11.9587C23.2178 11.8767 23.2333 
+                              11.7886 23.23 11.7001L22.8375 1.4926C22.8332 1.36878 22.7922 1.24903 22.7198 
+                              1.14855C22.6473 1.04807 22.5466 0.971396 22.4305 0.928263C22.3143 0.88513 
+                              22.188 0.877486 22.0675 0.9063C21.947 0.935114 21.8378 0.999087 21.7537 
+                              1.09009Z" fill="black"/>
+                        </svg>   
+                    </div>
+                    <div class="links">
+                        <ul class="faq_dasboard">
+                            <li><a href="dashboard.html" class="a_links">Dashboard</a></li>
+                            <li><a href="" class="a_links">Applicant</a></li>
+                            <li>
+                                <button class="dropdown-toggle btn_resources" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a href="" class="nav_link a_links">Resources</a>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="loan_calculator.html">Loan Calculator</a></li>
+                                    <li><a class="dropdown-item" href="faq.html">FAQ's</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right_side">
+                    <div class="">
+                        <div class="dropdown dropdown-center">
+                            <button class="btn_resources" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fa-solid fa-bell"></i>
+                            </button>
+                            <ul class="dropdown-menu faq_notification_wrapper">
+                              <div class="faq_notification_hero whitespace-nowrap">
+                                    <h2 class="faq_h2_notification">Notification</h2>
+                                    <a href="" class="">View All</a>
+                              </div>
+                              <li><hr class="dropdown-divider"></li>
+                              <div class="faq_notification_icon">
+                                    <div class="faq__icon_wrapper">
+                                        <i class="fa-regular fa-credit-card icon fa-lg faq__icon"></i>
+                                    </div>
+                                    <div class="faq__hero_wrapper">
+                                        <h2 class="faq__hero_h2">Approval needed</h2>
+                                        <p class="faq__hero_p">Loan Application lorem...</p>
+                                        <small class="faq__hero_sm">28 January 2021</small>
+                                    </div>
+                              </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accounts">
+                        <h2 class="accounts_h2">Julliet Ibrahim: #FBHO18372</h2>
+                    </div>
+                    <div class="accounts_icon faq_account_icon">                        
+                        <div class="dropdown">
+                            <button class=" dropdown-toggle btn_resources" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-circle-user" class="accounts_icon"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="dashboard.html">Profile</a></li>
+                              <li><a class="dropdown-item" href="settings.html">Settings</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menubar ">
+                        <button class="btn_resources" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <i class="fa-solid fa-bars btn_resources"></i>
+                        </button>                        
+                    </div>                    
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="mobile_links">
+                                <ul class="flex item-center gap-[30px] mobile_links_ul">
+                                    <li class="mobile_links_li"><a href="dashboard.html" class="a_links">Dashboard</a></li>
+                                    <li class="mobile_links_li"><a href="" class="a_links">Applicant</a></li>
+                                    <li class="mobile_links_li">
+                                        <button class="dropdown-toggle btn_resources" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <a href="" class="a_links">Resources</a>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="loan_calculator.html">Loan Calculator</a></li>
+                                            <li><a class="dropdown-item" href="faq.html">FAQ's</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="mobile_links_li"><a href="" class="a_links">Approver</a></li>
+                                    <li class="mobile_links_li">
+                                        <button class="dropdown-toggle btn_resources" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <a href="" class="a_links ">Administrator</a>
+                                        </button>
+                                        <ul class="dropdown-menu px-3">
+                                            <li class="mobile_links_dropdown">
+                                                <i class="fa-solid fa-gear"></i>
+                                                <a class="dropdown-item" href="rules_engine.html">Rules Engine</a>
+                                            </li>
+                                            <li class="mobile_links_dropdown">
+                                                <i class="fa-regular fa-credit-card"></i>
+                                                <a class="dropdown-item" href="sla.html">Configure SLA</a>
+                                            </li>
+                                            <li class="mobile_links_dropdown">
+                                                <i class="fa-regular fa-credit-card"></i>
+                                                <a class="dropdown-item" href="faqs.html">Manage FAQs</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!---------------- main-starts ----------------------->
+        <div class="main_section">
+            <div class="faq_main_container">
+                <div class="hero">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="">
+                            <h1 class="hero_text_h1">FAQs</h1>
+                            <p class="hero_text_p">Here’s a list of the FAQs to support you  </p>
+                        </div>
+                        <div class="">
+                            <select class="form-select form-select-sm" aria-label="Small select example">
+                                <option selected>Select Category</option>
+                                <option value="1">Category 2</option>
+                                <option value="2">Cat 3</option>
+                                <option value="3">Cat 4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq_navbar">
+                    <div class=" w-full h-[100%] faq_nav_menu">
+                        <div class="setting_icon navbar-item">
+                            <a href="settings.html"><i class="fa-solid fa-gear icon_gear"></i></a>
+                        </div>
+                        <div class="">
+                            <hr class=" hr_bg">
+                        </div>
+                        <div class="search_inputs ">
+                            <i class="fa-solid fa-magnifying-glass search_glass"></i>
+                            <input type="search" name="search" id="search" placeholder="Search" class="search_input ">
+                        </div>
+                    </div>
+                    <div class=" faq_nav_menu">
+                        <div class="no_list  navbar-item">
+                            <a href="#!" class="navbar-item pagination_link">1 - 10 of 52</a>
+                            <a href=""><i class="fa-solid fa-chevron-left icons "></i></a>
+                            <a href=""><i class="fa-solid fa-chevron-right icons "></i></a>
+                        </div>
+                        <div class="navbar-item">
+                            <hr class=" hr_bg">
+                        </div>
+                        <div class="navbar_item ">
+                            <a href=""><i class="fa-solid fa-filter icons mr-3"></i></a>
+                            <a href=""><i class="fa-solid fa-print icons mr-3"></i></a>
+                            <a href=""><i class="fa-solid fa-download icons mr-3"></i></a>
+                        </div>
+                        <div class="navbar-item">
+                            <hr class=" hr_bg">
+                        </div>
+                        <div class="navbar-item">
+                            <a href=""><i class="fa-solid fa-arrows-left-right icons icons_arrow_top"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- accordion -->
+               <div class="mt-[2rem]">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            How do I apply for a loan?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eleifend mollis ligula
+                             ut fermentum. Curabitur semper dolor quis urna consectetur, sed pellentesque dui
+                              maximus. Suspendisse sodales dolor diam, sit amet aliquam lorem feugiat eget.
+                               Vivamus congue felis id dolor finibus fringilla quis at arcu. Nulla tristique 
+                               mauris arcu, faucibus maximus ipsum mollis vitae. Praesent nulla leo, 
+                               sollicitudin a erat malesuada, elementum bibendum ante. Integer ut urna mi. 
+                               Aenean ornare et turpis a consectetur. Pellentesque lectus ex, accumsan quis 
+                               justo ac, suscipit facilisis enim. Cras pharetra tristique lectus, id mollis
+                                augue pharetra eu. Donec at elit malesuada metus fermentum ornare.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How long does it take to receive a credit decision
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eleifend mollis ligula
+                            ut fermentum. Curabitur semper dolor quis urna consectetur, sed pellentesque dui
+                             maximus. Suspendisse sodales dolor diam, sit amet aliquam lorem feugiat eget.
+                              Vivamus congue felis id dolor finibus fringilla quis at arcu. Nulla tristique 
+                              mauris arcu, faucibus maximus ipsum mollis vitae. Praesent nulla leo, 
+                              sollicitudin a erat malesuada, elementum bibendum ante. Integer ut urna mi. 
+                              Aenean ornare et turpis a consectetur. Pellentesque lectus ex, accumsan quis 
+                              justo ac, suscipit facilisis enim. Cras pharetra tristique lectus, id mollis
+                               augue pharetra eu. Donec at elit malesuada metus fermentum ornare.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+            </div>
+        </div>
+    <!---------------- main-ends --------------------->
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

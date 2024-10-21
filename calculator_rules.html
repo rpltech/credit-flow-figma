@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit flow</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontawesome-icons -->
+    <script src="https://kit.fontawesome.com/1566b08547.js" crossorigin="anonymous"></script>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body >
+    <!---------------- Nav-section ----------------->
+    <nav class="border-b border-slate-500">
+        <div class="container py-[20px]">
+            <div class="flex justify-between items-center">
+                <div class="left_side flex gap-[60px] items-center">
+                    <div class="logo flex-5">
+                        <svg width="54" height="28" viewBox="0 0 54 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.7537 1.09009L21.3062 1.57134L19.0563 3.92009L18.6237 3.70634C16.9446 
+                            2.90942 15.1087 2.49732 13.25 2.50009C6.10125 2.50009 0.75 8.26635 0.75 
+                            15.0001C0.75 21.7576 6.2325 27.5001 13.25 27.5001C16.6488 27.5001 20.0175
+                             26.0288 22.285 23.6376L28.465 17.1151L35.4037 9.75259C36.8288 8.23884
+                              38.8075 7.50009 40.75 7.50009C44.8462 7.50009 48.25 10.7901 48.25 
+                              15.0001C48.25 19.0101 44.9875 22.5001 40.75 22.5001C38.3963 22.5001 
+                              36.9875 21.7638 35.1338 19.9326L34.2762 19.0576L33.4663 18.2001L32.5262 
+                              17.1838C32.4683 17.1205 32.3979 17.0698 32.3194 17.0349C32.241 17 
+                              32.1562 16.9816 32.0704 16.9809C31.9845 16.9802 31.8995 16.9972 
+                              31.8205 17.0308C31.7415 17.0644 31.6703 17.114 31.6112 17.1763L29.0462
+                              19.8888C28.9366 20.0045 28.8752 20.1577 28.8748 20.3171C28.8743 20.4765 
+                              28.9347 20.63 29.0438 20.7463L31.4738 23.3388L31.8 23.6726C32.2288 24.1001 
+                              32.6625 24.4913 33.135 24.8638C35.2475 26.5251 37.7313 27.5001 40.75 
+                              27.5001C47.8312 27.5001 53.25 21.7263 53.25 15.0001C53.25 8.1876 
+                              47.7663 2.50009 40.75 2.50009C37.235 2.50009 33.925 3.94385 31.47 
+                              6.6001L28.5275 9.77634L25.1525 13.3813L18.665 20.1838C17.1725 
+                              21.7463 15.28 22.5001 13.25 22.5001C8.9975 22.5001 5.75 19.0188 5.75 
+                              15.0001C5.75 10.9763 8.99 7.50009 13.25 7.50009L13.5437 7.50634C14.045 
+                              7.52634 14.5938 7.59635 15.0875 7.7151L15.3175 7.77509L13.0388 10.0501L12.7088 
+                              10.3826C12.6254 10.4666 12.5676 10.5725 12.542 10.688C12.5165 10.8036 12.5242 
+                              10.924 12.5644 11.0353C12.6046 11.1466 12.6756 11.2442 12.7691 11.3167C12.8626 
+                              11.3893 12.9747 11.4338 13.0925 11.4451L20.4963 12.1601L22.5525 12.3463C22.6407 
+                              12.3538 22.7295 12.3425 22.813 12.3131C22.8965 12.2837 22.9728 12.2369 23.0368 
+                              12.1758C23.1009 12.1147 23.1512 12.0407 23.1845 11.9587C23.2178 11.8767 23.2333 
+                              11.7886 23.23 11.7001L22.8375 1.4926C22.8332 1.36878 22.7922 1.24903 22.7198 
+                              1.14855C22.6473 1.04807 22.5466 0.971396 22.4305 0.928263C22.3143 0.88513 
+                              22.188 0.877486 22.0675 0.9063C21.947 0.935114 21.8378 0.999087 21.7537 
+                              1.09009Z" fill="black"/>
+                        </svg>   
+                    </div>
+                    <div class="links">
+                        <ul class="flex item-center gap-[30px] links_ul">
+                            <li class="links_li"><a href="dashboard.html" class="a_links">Dashboard</a></li>
+                            <li class="links_li"><a href="" class="a_links">Applicant</a></li>
+                            <li class="links_li">
+                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a href="" class="a_links">Resources</a>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="loan_calculator.html">Loan Calculator</a></li>
+                                    <li><a class="dropdown-item" href="faq.html">FAQ's</a></li>
+                                </ul>
+                            </li>
+                            <li class="links_li"><a href="" class="a_links">Approver</a></li>
+                            <li class="links_li">
+                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a href="" class="a_links">Administrator</a>
+                                </button>
+                                <ul class="dropdown-menu px-[15px]">
+                                    <li class="flex  items-center">
+                                        <i class="fa-solid fa-gear"></i>
+                                        <a class="dropdown-item" href="rules_engine.html">Rules Engine</a>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fa-regular fa-credit-card"></i>
+                                        <a class="dropdown-item" href="sla.html">Configure SLA</a>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fa-regular fa-credit-card"></i>
+                                        <a class="dropdown-item" href="faqs.html">Manage FAQs</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>                   
+                </div>
+                <div class="right_side flex items-center gap-[20px]">
+                    <div class="">
+                        <div class="dropdown dropdown-center">
+                            <button class="" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fa-solid fa-bell"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <div class="flex gap-[10rem] justify-between p-[20px] whitespace-nowrap">
+                                    <h2 class="notification font-[Inter]">Notification</h2>
+                                    <a href="" class="text-blue-500 font-medium text-[12px]">View All</a>
+                              </div>
+                              <li><hr class="dropdown-divider"></li>
+                              <div class="flex items-center gap-[20px] p-[20px]">
+                                    <div class="bg-[#FFF5D9]  rounded-[50%] p-[1.5rem]">
+                                        <i class="fa-regular fa-credit-card icon text-[#FFBB38] fa-lg"></i>
+                                    </div>
+                                    <div class="">
+                                        <h2 class="font-bold text-[14px]">Approval needed</h2>
+                                        <p class="text-[#CBD5E1] pt-[5px] text-[12px]">Loan Application lorem...</p>
+                                        <small class="text-[#CBD5E1] text-[10px]">28 January 2021</small>
+                                    </div>
+                              </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accounts">
+                        <h2 class="accounts_h2">Julliet Ibrahim: #FBHO18372</h2>
+                    </div>
+                    <div class="accounts_icon">                        
+                        <div class="dropdown">
+                            <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-circle-user" class="accounts_icon"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="dashboard.html">Profile</a></li>
+                              <li><a class="dropdown-item" href="settings.html">Settings</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                    <div class="menubar">
+                        <button class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>                        
+                    </div>                    
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="mobile_links">
+                                <ul class="flex item-center gap-[30px] mobile_links_ul">
+                                    <li class="mobile_links_li"><a href="dashboard.html" class="a_links">Dashboard</a></li>
+                                    <li class="mobile_links_li"><a href="" class="a_links">Applicant</a></li>
+                                    <li class="mobile_links_li">
+                                        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <a href="" class="a_links">Resources</a>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="loan_calculator.html">Loan Calculator</a></li>
+                                            <li><a class="dropdown-item" href="faq.html">FAQ's</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="mobile_links_li"><a href="" class="a_links">Approver</a></li>
+                                    <li class="mobile_links_li">
+                                        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <a href="" class="a_links">Administrator</a>
+                                        </button>
+                                        <ul class="dropdown-menu px-[15px]">
+                                            <li class="flex  items-center">
+                                                <i class="fa-solid fa-gear"></i>
+                                                <a class="dropdown-item" href="rules_engine.html">Rules Engine</a>
+                                            </li>
+                                            <li class="flex items-center">
+                                                <i class="fa-regular fa-credit-card"></i>
+                                                <a class="dropdown-item" href="sla.html">Configure SLA</a>
+                                            </li>
+                                            <li class="flex items-center">
+                                                <i class="fa-regular fa-credit-card"></i>
+                                                <a class="dropdown-item" href="faqs.html">Manage FAQs</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!---------------- main-starts ----------------------->
+        <div class="main_section">
+            <div class="container">
+                <div class="hero mt-[3rem]">
+                    <div class="flex justify-between items-center hero_application_loan">
+                        <div class="">
+                            <h1 class="hero_text_h1">Rules Engine</h1>
+                            <p class="hero_text_p">Here's a list of all rules govern the loans process</p>
+                        </div>
+                        <div class="flex gap-[20px]">
+                            <button class="hero_btn px-[20px] py-[10px] rounded"><a href="staff_loan.html">View Pending Approvals</a></button>
+                            <div class="dropdown">
+                                <button class="hero_btn px-[20px] py-[10px] rounded dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Add Rule
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-lg-end">
+                                  <div class="p-[15px]">
+                                    <div class="flex flex-col mb-[1rem]">
+                                        <h2 class="text-[14px] font-bold">Add New Rule</h2>
+                                        <p class="text-[#666666] text-[12px]">Add the parameters of the new rule</p>
+                                    </div>
+                                    <div class="">
+                                        <form action="" class="approval_form">
+                                            <div class="mb-3 ">                                                
+                                                <div class="flex form_input_rule">
+                                                    <label for="key" class="col-sm-2 col-form-label">Key</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" name="key" id="key" class="form_control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3 ">                                                
+                                                <div class="flex form_input_rule">
+                                                    <label for="condition" class="col-sm-2 col-form-label">Condition</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" name="condition" id="condition" class="form_control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3 ">                                                
+                                                <div class="flex form_input_rule">
+                                                    <label for="value" class="col-sm-2 col-form-label">Value</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" name="value" id="value" class="form_control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3 ">                                                
+                                                <div class="flex form_input_rule">
+                                                    <label for="type" class="col-sm-2 col-form-label">Type</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" name="type" id="type" class="form_control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3 ">                                                
+                                                <div class="flex form_input_rule">
+                                                    <label for="length" class="col-sm-2 col-form-label">Length</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" name="length" id="length" class="form_control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <button type="submit" class="w-[100%] py-[10px] rounded bg-[#00B03C] text-[#FFFFFF] font-bold text-[12px] ">Save Rule</button>
+                                            </div>                                 
+                                        </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center px-[10px] py-[25px] hero_search_wrapper">
+                    <div class="flex gap-[15px] w-full h-[100%] ">
+                        <div class="setting_icon">
+                            <a href="settings.html"><i class="fa-solid fa-gear icon_gear"></i></a>
+                        </div>
+                        <div class="">
+                            <hr class="w-[1px] h-[100%] hr_bg">
+                        </div>
+                        <div class="search_inputs flex items-center gap-[10px]">
+                            <i class="fa-solid fa-magnifying-glass search_glass"></i>
+                            <input type="search" name="search" id="search" placeholder="Search" class="search_input ">
+                        </div>
+                    </div>
+                    <div class="flex  gap-[20px] hero_icons_jusitfy ">
+                        <div class="no_list flex gap-[20px] items-center">
+                            <p class="text-nowrap p_no_list">1 - 4 of 4</p>
+                            <a href="rules_engine.html"><i class="fa-solid fa-chevron-left icons"></i></a>
+                            <a href=""><i class="fa-solid fa-chevron-right icons"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="overflow-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class=" border-b">
+                                <th class="whitespace-nowrap tracking-wide p-3">Loan Type</th>
+                                <th class="whitespace-nowrap tracking-wide p-3">Key</th>
+                                <th class="whitespace-nowrap tracking-wide p-3">Condition</th>
+                                <th class="whitespace-nowrap tracking-wide p-3">Value</th>
+                                <th class="whitespace-nowrap tracking-wide p-3">Type</th>
+                                <th class="whitespace-nowrap tracking-wide p-3">Maximum Length</th>
+                                <th class="whitespace-nowrap tracking-wide p-3">Justification</th>
+                                <th class="whitespace-nowrap tracking-wide p-3">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="whitespace-nowrap p-3 font-medium">Auto Loan </td>
+                                <td class="whitespace-nowrap p-3 font-medium">Vehicle Age</td>
+                                <td class="whitespace-nowrap p-3 font-medium"><small class="bg-slate-100 p-[0.5rem]  tracking-wider font-medium text-[#333]">=<</small></td>
+                                <td class="whitespace-nowrap p-3 font-medium">1</td>
+                                <td class="whitespace-nowrap p-3 font-medium">Integer</td>
+                                <td class="whitespace-nowrap p-3 font-medium">2</td>
+                                <td class="whitespace-nowrap p-3 font-medium">Reason 2</td>
+                                <td class="whitespace-nowrap p-3 text-blue-500 underline font-bold"><a href="">Edit</a></td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="whitespace-nowrap p-3 font-medium">Mortgage </td>
+                                <td class="whitespace-nowrap p-3 font-medium">Staff Age</td>
+                                <td class="whitespace-nowrap p-3 font-medium"><small class="bg-slate-100 p-[0.5rem]  tracking-wider font-medium text-[#333]">=<</small></td>
+                                <td class="whitespace-nowrap p-3 font-medium">40</td>
+                                <td class="whitespace-nowrap p-3 font-medium">Integer</td>
+                                <td class="whitespace-nowrap p-3 font-medium">2</td>
+                                <td class="whitespace-nowrap p-3 font-medium">Reason 2</td>
+                                <td class="whitespace-nowrap p-3 text-blue-500 underline font-bold"><a href="">Link</a></td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="whitespace-nowrap p-3 font-medium">Personal Loan </td>
+                                <td class="whitespace-nowrap p-3 font-medium">Maximum Tenor (Months)</td>
+                                <td class="whitespace-nowrap p-3 font-medium"><small class="bg-slate-100 p-[0.5rem]  tracking-wider font-medium text-[#333]">=<</small></td>
+                                <td class="whitespace-nowrap p-3 font-medium">50</td>
+                                <td class="whitespace-nowrap p-3 font-medium">Integer</td>
+                                <td class="whitespace-nowrap p-3 font-medium">2</td>
+                                <td class="whitespace-nowrap p-3 font-medium">Credit team comm...</td>
+                                <td class="whitespace-nowrap p-3 text-red-500 underline font-bold"><a href="">Withdraw</a></td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="whitespace-nowrap p-3 font-medium">Corperate Loan </td>
+                                <td class="whitespace-nowrap p-3 font-medium">Interest Rate</td>
+                                <td class="whitespace-nowrap p-3 font-medium"><small class="bg-slate-100 p-[0.5rem]  tracking-wider font-medium text-[#333]">=<</small></td>
+                                <td class="whitespace-nowrap p-3 font-medium">8.50%</td>
+                                <td class="whitespace-nowrap p-3 font-medium">Double</td>
+                                <td class="whitespace-nowrap p-3 font-medium">4</td>
+                                <td class="whitespace-nowrap p-3 font-medium">Board Decision</td>
+                                <td class="whitespace-nowrap p-3 text-red-500 underline font-bold"><a href="">Edit</a></td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="whitespace-nowrap p-3 font-medium">Auto Loan </td>
+                                <td class="whitespace-nowrap p-3 font-medium">Debit to Income Limit</td>
+                                <td class="whitespace-nowrap p-3 font-medium"><small class="bg-slate-100 p-[0.5rem]  tracking-wider font-medium text-[#333]">=<</small></td>
+                                <td class="whitespace-nowrap p-3 font-medium">35%</td>
+                                <td class="whitespace-nowrap p-3 font-medium">Double</td>
+                                <td class="whitespace-nowrap p-3 font-medium">4</td>
+                                <td class="whitespace-nowrap p-3 font-medium">Reason...</td>
+                                <td class="whitespace-nowrap p-3 text-blue-500 underline font-bold"><a href="">Link</a></td>
+                            </tr>
+                        </tbody>                            
+                    </table>
+                </div>
+            </div>
+        </div>
+    <!---------------- main-ends --------------------->
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

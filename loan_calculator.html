@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit flow</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontawesome-icons -->
+    <script src="https://kit.fontawesome.com/1566b08547.js" crossorigin="anonymous"></script>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!---------------- Nav-section ----------------->
+    <nav class="border-b border-slate-500">
+        <div class="container py-[20px]">
+            <div class="flex justify-between items-center">
+                <div class="left_side flex gap-[60px] items-center">
+                    <div class="logo flex-5">
+                        <svg width="54" height="28" viewBox="0 0 54 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.7537 1.09009L21.3062 1.57134L19.0563 3.92009L18.6237 3.70634C16.9446 
+                            2.90942 15.1087 2.49732 13.25 2.50009C6.10125 2.50009 0.75 8.26635 0.75 
+                            15.0001C0.75 21.7576 6.2325 27.5001 13.25 27.5001C16.6488 27.5001 20.0175
+                             26.0288 22.285 23.6376L28.465 17.1151L35.4037 9.75259C36.8288 8.23884
+                              38.8075 7.50009 40.75 7.50009C44.8462 7.50009 48.25 10.7901 48.25 
+                              15.0001C48.25 19.0101 44.9875 22.5001 40.75 22.5001C38.3963 22.5001 
+                              36.9875 21.7638 35.1338 19.9326L34.2762 19.0576L33.4663 18.2001L32.5262 
+                              17.1838C32.4683 17.1205 32.3979 17.0698 32.3194 17.0349C32.241 17 
+                              32.1562 16.9816 32.0704 16.9809C31.9845 16.9802 31.8995 16.9972 
+                              31.8205 17.0308C31.7415 17.0644 31.6703 17.114 31.6112 17.1763L29.0462
+                              19.8888C28.9366 20.0045 28.8752 20.1577 28.8748 20.3171C28.8743 20.4765 
+                              28.9347 20.63 29.0438 20.7463L31.4738 23.3388L31.8 23.6726C32.2288 24.1001 
+                              32.6625 24.4913 33.135 24.8638C35.2475 26.5251 37.7313 27.5001 40.75 
+                              27.5001C47.8312 27.5001 53.25 21.7263 53.25 15.0001C53.25 8.1876 
+                              47.7663 2.50009 40.75 2.50009C37.235 2.50009 33.925 3.94385 31.47 
+                              6.6001L28.5275 9.77634L25.1525 13.3813L18.665 20.1838C17.1725 
+                              21.7463 15.28 22.5001 13.25 22.5001C8.9975 22.5001 5.75 19.0188 5.75 
+                              15.0001C5.75 10.9763 8.99 7.50009 13.25 7.50009L13.5437 7.50634C14.045 
+                              7.52634 14.5938 7.59635 15.0875 7.7151L15.3175 7.77509L13.0388 10.0501L12.7088 
+                              10.3826C12.6254 10.4666 12.5676 10.5725 12.542 10.688C12.5165 10.8036 12.5242 
+                              10.924 12.5644 11.0353C12.6046 11.1466 12.6756 11.2442 12.7691 11.3167C12.8626 
+                              11.3893 12.9747 11.4338 13.0925 11.4451L20.4963 12.1601L22.5525 12.3463C22.6407 
+                              12.3538 22.7295 12.3425 22.813 12.3131C22.8965 12.2837 22.9728 12.2369 23.0368 
+                              12.1758C23.1009 12.1147 23.1512 12.0407 23.1845 11.9587C23.2178 11.8767 23.2333 
+                              11.7886 23.23 11.7001L22.8375 1.4926C22.8332 1.36878 22.7922 1.24903 22.7198 
+                              1.14855C22.6473 1.04807 22.5466 0.971396 22.4305 0.928263C22.3143 0.88513 
+                              22.188 0.877486 22.0675 0.9063C21.947 0.935114 21.8378 0.999087 21.7537 
+                              1.09009Z" fill="black"/>
+                        </svg>   
+                    </div>
+                    <div class="links">
+                        <ul class="faq_dasboard">
+                            <li><a href="dashboard.html" class="a_links">Dashboard</a></li>
+                            <li><a href="" class="a_links">Applicant</a></li>
+                            <li>
+                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a href="" class="nav_link a_links">Resources</a>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="loan_calculator.html">Loan Calculator</a></li>
+                                    <li><a class="dropdown-item" href="faq.html">FAQ's</a></li>
+                                </ul>
+                            </li>
+                            <li class="links_li"><a href="" class="a_links">Approver</a></li>
+                            <li class="links_li">
+                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a href="" class="a_links">Administrator</a>
+                                </button>
+                                <ul class="dropdown-menu px-[15px]">
+                                    <li class="flex  items-center">
+                                        <i class="fa-solid fa-gear"></i>
+                                        <a class="dropdown-item" href="rules_engine.html">Rules Engine</a>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fa-regular fa-credit-card"></i>
+                                        <a class="dropdown-item" href="sla.html">Configure SLA</a>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fa-regular fa-credit-card"></i>
+                                        <a class="dropdown-item" href="faqs.html">Manage FAQs</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right_side d-flex align-items-center gap-[20px]">
+                    <div class="">
+                        <div class="dropdown dropdown-center">
+                            <button class="" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fa-solid fa-bell"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <div class="flex gap-[10rem] justify-between p-[20px] whitespace-nowrap">
+                                    <h2 class="notification font-[Inter]">Notification</h2>
+                                    <a href="" class="text-blue-500 font-medium text-[12px]">View All</a>
+                              </div>
+                              <li><hr class="dropdown-divider"></li>
+                              <div class="flex items-center gap-[20px] p-[20px]">
+                                    <div class="bg-[#FFF5D9]  rounded-[50%] p-[1.5rem]">
+                                        <i class="fa-regular fa-credit-card icon text-[#FFBB38] fa-lg"></i>
+                                    </div>
+                                    <div class="">
+                                        <h2 class="font-bold text-[14px]">Approval needed</h2>
+                                        <p class="text-[#CBD5E1] pt-[5px] text-[12px]">Loan Application lorem...</p>
+                                        <small class="text-[#CBD5E1] text-[10px]">28 January 2021</small>
+                                    </div>
+                              </div>
+                            </ul>
+                          </div>
+                    </div>
+                    <div class="accounts">
+                        <h2 class="accounts_h2">Julliet Ibrahim: #FBHO18372</h2>
+                    </div>
+                    <div class="accounts_icon">                        
+                        <div class="dropdown">
+                            <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-circle-user" class="accounts_icon"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="dashboard.html">Profile</a></li>
+                              <li><a class="dropdown-item" href="settings.html">Settings</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+
+                    <div class="menubar">
+                        <button class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>                        
+                    </div>                    
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="mobile_links">
+                                <ul class="flex item-center gap-[30px] mobile_links_ul">
+                                    <li class="mobile_links_li"><a href="dashboard.html" class="a_links">Dashboard</a></li>
+                                    <li class="mobile_links_li"><a href="" class="a_links">Applicant</a></li>
+                                    <li class="mobile_links_li">
+                                        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <a href="" class="a_links">Resources</a>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="loan_calculator.html">Loan Calculator</a></li>
+                                            <li><a class="dropdown-item" href="faq.html">FAQ's</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="mobile_links_li"><a href="" class="a_links">Approver</a></li>
+                                    <li class="mobile_links_li">
+                                        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <a href="" class="a_links">Administrator</a>
+                                        </button>
+                                        <ul class="dropdown-menu px-[15px]">
+                                            <li class="flex  items-center">
+                                                <i class="fa-solid fa-gear"></i>
+                                                <a class="dropdown-item" href="rules_engine.html">Rules Engine</a>
+                                            </li>
+                                            <li class="flex items-center">
+                                                <i class="fa-regular fa-credit-card"></i>
+                                                <a class="dropdown-item" href="sla.html">Configure SLA</a>
+                                            </li>
+                                            <li class="flex items-center">
+                                                <i class="fa-regular fa-credit-card"></i>
+                                                <a class="dropdown-item" href="faqs.html">Manage FAQs</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </nav>
+
+    <!---------------- main-starts ----------------------->
+        <div class="main_section">
+            <div class="container">
+                <div class="hero mt-[3rem]">
+                    <div class="">
+                        <div class="">
+                            <h1 class="hero_text_h1">Loan Calculator</h1>
+                            <p class="hero_text_p">Our self-assessment tool estimates the loan amount, tenure and monthly payments you qualify for.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-[20px] loan_calculator">
+                    <div class="form_loan py-[20px]">
+                        <form action="" method="post" class="form_loan_wrapper ">
+                             <div class="flex justify-between my-[20px] input_loan_form">
+                                 <div class="w-[200px] ">
+                                    <label for="" class="text-nowrap">Loan Amount Requested </label><br>
+                                    <small class="text-[#666665]">How much are you requesting for the loan?</small>
+                                 </div>
+                                 <div class="form_input_loan_wrapper">
+                                    <input type="text" name="loan_request" id="loan_request" placeholder="GHS20,000" class="form-control w-[100%] form_input_loan">
+                                 </div>
+                             </div>
+                             <div class="flex justify-between my-[20px] input_loan_form">
+                                 <div class="">
+                                    <label for="loan_type" class="text-nowrap">Loan type</label>
+                                 </div>
+                                <div class="form_input_loan_wrapper">
+                                    <select class="form-select input_loan_form" aria-label="Small select example">
+                                        <option selected>Select loan type</option>
+                                        <option value="1">Category 2</option>
+                                        <option value="2">Cat 3</option>
+                                        <option value="3">Cat 4</option>
+                                    </select>
+                                </div>
+                             </div>
+                             <div class="flex justify-between my-[20px] input_loan_form">
+                                <div class="">
+                                    <label for="Tenor" class="">Tenor (Months)</label>
+                                </div>
+                                <div class="">
+                                    <input type="text" class="form-control" id="Tenor" placeholder="Tenor (Months)">
+                                </div>
+                             </div>
+                             <div class="flex justify-between my-[20px] input_loan_form">
+                                <div class="">
+                                    <label for="interest-rate" class="">Interest Rate</label>
+                                </div>
+                                <div class="">
+                                    <input type="text" class="form-control" id="interest-rate" placeholder="7%">
+                                </div>
+                             </div>
+                             <div class="flex justify-between my-[20px] input_loan_form">
+                                <div class="">
+                                    <label for="interest-rate" class="">Debt-to-Income Limit</label>
+                                </div>
+                                <div class="">
+                                    <input type="text" class="form-control" id="interest-rate" placeholder="40%">
+                                </div>
+                             </div>
+                             <div class="flex justify-between my-[20px] input_loan_form">
+                                <div class="">
+                                    <label for="interest-rate" class="">Net Salary + Car Maintenance</label>
+                                </div>
+                                <div class="">
+                                    <input type="text" class="form-control" id="interest-rate" placeholder="GHS3,600">
+                                </div>
+                             </div>
+                             <div class="flex justify-between my-[20px] input_loan_form">
+                                <div class="">
+                                    <label for="interest-rate" class="">Rent + Clothing</label>
+                                </div>
+                                <div class="">
+                                    <input type="text" class="form-control" id="interest-rate" placeholder="GHS600">
+                                </div>
+                             </div>
+                             <div class="flex justify-between my-[20px] input_loan_form">
+                                <div class="">
+                                    <label for="interest-rate" class="">EMI (Capital + Personal + Education + HP)</label>
+                                </div>
+                                <div class="">
+                                    <input type="text" class="form-control" id="interest-rate" placeholder="GHS0">
+                                </div>
+                             </div>
+                             <div class="flex justify-between my-[20px] input_loan_form">
+                                <div class="">
+                                    <label for="interest-rate" class="">EMI (Auto Loan only)</label>
+                                </div>
+                                <div class="">
+                                    <input type="text" class="form-control" id="interest-rate" placeholder="GHS0">
+                                </div>
+                             </div>
+                             <div class="flex justify-between my-[20px] input_loan_form">
+                                <div class="">
+                                    <label for="interest-rate" class="">EMI (Mortgage only)</label>
+                                </div>
+                                <div class="">
+                                    <input type="text" class="form-control" id="interest-rate" placeholder="GHS0">
+                                </div>
+                             </div>
+                             <div class="">
+                                <button type="submit" class="bg-green-500 w-[100%] text-[#fff] py-[10px] rounded">Calculate</button>
+                             </div>                            
+                        </form>
+                    </div>
+                    <div class="pt-[40px]">
+                        <div class="card p-[2rem]">
+                           <div class="">
+                                <p class="text-[12px] text-center">You Quality For</p>
+                                <h1 class="text-green-500 font-bold text-[3rem] text-center">GHS98,539.47</h1>
+                           </div>
+                           <div class="mt-[2rem]">
+                                <p class="text-[12px] text-center">Your Monthly Payments Will Be</p>
+                                <h1 class="text-rose-500 font-bold text-[3rem] text-center">GHS340.98</h1>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!---------------- main-ends --------------------->
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

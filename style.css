@@ -1,0 +1,726 @@
+:root{
+    --background-color: #ffffff;
+    --font-color-main: #111111;
+    --font-color-light: #616161;
+    /* --font-color-light: #999999; */
+    --base-color-main: #EB7100;
+    --button-color: #00B03C;
+    --button-font-color: #FFFFFF;
+    --border-color: #bbbbbb;
+    --font-size-large: 48px;
+    --font-size-medium: 32px;
+    --font-size-small: 12px;
+    --font-size-bold: 14px; 
+    --font-size-big: 25px; 
+    --box-shadow: 2px 2px 4px hsla(0, 0%, 0%, 0.5);
+}
+/* @media (prefers-color-scheme: dark) {
+    :root{
+        --background-color: #000000;
+        --font-color-main: #fffbfb;
+        --font-color-light: #cecece;
+        --base-color-main: #EB7100;
+        --button-color: #00B03C;
+        --button-font-color: #FFFFFF;
+        --border-color: #a8a5a5;
+        --font-size-large: 48px;
+        --font-size-medium: 32px;
+        --font-size-small: 12px;
+        --font-size-bold: 14px; 
+        --box-shadow: 2px 2px 4px hsla(0, 0%, 0%, 0.5);
+    }
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: var(--background-color); */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Inter";
+    overflow-x: hidden;    
+    background-color: var(--background-color);
+}
+
+a{
+    text-decoration: none;
+    font-size: var(--font-size-small);
+}
+.hr_bg{
+    background-color: var(--border-color);
+    height: 100%;
+    width: 1px;
+}
+th{
+    color: var(--font-color-main);
+    font-size: var(--font-size-bold);
+}
+td{
+    color: var(--font-color-light);
+    font-size: var(--font-size-bold);
+}
+
+h1,h2,h3,h4,h5{
+    font-size: var(--font-size-medium);
+    font-family: "Inter";
+    color: var(--font-color-main);
+    font-weight: bold;
+}
+
+/* ---------------------------------------------------
+                    wrapper-container
+-------------------------------------------------------*/
+
+.FAQ_container{
+    width: 80%;
+    margin: auto;
+}
+.faq_nav_wrapper{
+    border-bottom: 1px solid gray;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.row{
+    display: flex;
+    gap: 20px;
+    width: 1000px;
+    height: 600px;
+    border: 1px solid var(--base-color-main);
+}
+.col-1{
+    flex-basis: 50%;
+    background-color: var(--base-color-main);
+    padding: 20px;
+}
+.col-2{
+    flex-basis: 50%;
+    background-color: var(--background-color);
+    padding: 20px;
+}
+.faq_notification_wrapper{
+    width: 350px;
+}
+.faq_notification_hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.faq_h2_notification{
+    font-size: 16px;
+}
+.faq_notification_icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    padding-bottom: 2rem;
+}
+.faq__icon_wrapper{
+    width: 60px;
+    height: 60px;
+    background-color: #FFF5D9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.faq__icon{
+    color: #EB7100;
+}
+.faq__hero_wrapper{
+    margin: 0;
+    padding: 0;
+}
+.faq__hero_h2{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+.faq__hero_p{
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    font-size: 12px;
+    color: #bbbbbb;
+}
+.faq__hero_sm{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #bbbbbb;
+}
+/* ---------------------------------------------------
+                    form-section
+-------------------------------------------------------*/
+.form_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.login_text_wrapper{
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.text_login{
+    color: var(--font-color-main);
+    font-family: "Inter";
+    font-size: var(--font-size-large);
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.text_para{
+    color: var(--font-color-main);
+    font-family: "Inter";
+    font-size: var(--font-size-small);
+}
+.input_wrapper{
+    margin: 35px 0;
+}
+.input-field{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    outline: none;
+    font-size: var(--font-size-bold);
+    font-family: "Inter";
+    letter-spacing: 1.1px;
+    padding: 10px 15px;
+}
+.label{
+    font-size: var(--font-size-bold);
+    font-family: "Inter";
+    color: var(--font-color-main);
+}
+.btn_wrapper{
+    margin-top: 40px;
+}
+.btn{
+    background: var(--base-color-main);
+    font-size: var(--font-size-small);
+    color: var(--button-font-color);
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px 0;
+    font-family: "Inter";
+}
+
+/* -----------------------------------------------------
+                       nav-section
+--------------------------------------------------------*/
+.FAQ_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left_side{
+    display: flex;
+    align-items: center;
+}
+.links{
+    margin-top: 1rem;
+    padding: 1rem 0;
+}
+.links .faq_dasboard{
+    list-style: none;
+    display: flex;
+}
+.links .faq_dasboard li{
+    margin: 0 20px;
+}
+.links .faq_dasboard li a{
+    text-decoration: none;
+}
+.logo svg{
+    color: var(--font-color-main);
+}
+.a_links{
+    color: var(--font-color-main);
+    font-size: var(--font-size-bold);
+    font-family: "Inter";
+}
+.accounts_h2{
+    color: var(--font-color-main);
+    font-size: var(--font-size-bold);
+}
+.accounts_icon i{
+    color: var(--font-color-main);
+    
+}
+.accounts_icon{
+    margin-top: -0.1rem;
+    margin-left: 0.5rem;
+    
+}
+.menubar{
+    display: none;
+}
+
+.faq_main_container{
+    width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+/* -----------------------------------------------------
+                        main-section
+--------------------------------------------------------*/
+.hero_text_h1{
+    font-size: var(--font-size-large);
+    color: var(--font-color-main);
+    font-weight: bold;
+    font-family: "Inter";
+}
+.hero .hero_text_p{
+    font-size: var(--font-size-bold);
+    color: var(--font-color-light);
+    font-family: "Inter";
+}
+.hero_btn{
+    background: var(--button-color);
+    color: var(--button-font-color);
+    font-size: var(--font-size-small);
+}
+
+/* main-section-search-input */
+.icon_gear{
+    color: var(--font-color-light);
+}
+.search_inputs{
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    padding: 0 5px;
+}
+.search_glass{
+    font-size: var(--font-size-small);
+    color: var(--border-color);
+}
+.search_input{
+    outline: none;
+    border: none;
+    padding: 5px;
+    font-size: var(--font-size-bold);
+    color: var(--font-color-main);
+    background-color: var(--background-color);
+}
+
+/*  */
+.p_no_list{
+    color: var(--border-color);
+    font-size: var(--font-size-small);
+    font-family: "Inter";
+}
+.icons{
+    color: var(--font-color-light);
+    font-size: var(--font-size-bold);
+}
+.icons_arrow_top{
+    transform: rotate(-45deg);
+}
+.pagination_link{
+    text-decoration: none;
+    color: #616161;
+}
+
+/* table-section-in-main */
+.small{
+    color: var(--border-color);
+    font-weight: bold;
+}
+
+/* ----------------------------------------------------------------
+                    Dashboard-apply-for-Loan-section
+-------------------------------------------------------------------*/
+
+.staff_text_h3{
+    font-size: var(--font-size-big);
+    font-weight: medium;
+    color: var(--font-color-main);
+    font-family: "Inter";
+}
+.staff_text_p{
+    font-size: var(--font-size-bold);
+    color: var(--font-color-light);
+    font-family: "Inter";
+}
+.staffs_input{
+    width: 100%;
+}
+
+/* ----------------------------------------------------------------
+                    Dashboard--Loan-details-section
+-------------------------------------------------------------------*/
+.check_box_text{
+    font-size: var(--font-size-bold);
+    font-weight: 500;
+}
+.check_box_text_2{
+    font-size: var(--font-size-bold);
+    font-weight: 500;
+    color: var(--font-color-light);
+}
+.app_checklist{
+    color: var(--font-size-bold);
+    font-weight: bold;
+    /* width: 30%; */
+}
+.app_checklist_wrapper{
+    width: 30%;
+}
+.app_checklist_wrapper .check_icons{
+    display: flex;
+    justify-content: space-between;
+}
+.stc_text{
+    font-size: var(--font-size-small);
+    color: var(--font-color-light);
+}
+.upload{
+    color: var(--button-font-color);
+    font-size: var(--font-size-small);
+}
+.check_icon{
+    color: var(--button-color);
+}
+/* modal-pop-up */
+.congratulations{
+    font-size: var(--font-size-bold);
+    color: var(--font-color-main);
+    font-weight: bold;
+}
+.congratulations_text{
+    font-size: var(--font-size-small);
+    color: var(--font-color-light);
+}
+.done_btn{
+    font-size: var(--font-size-small);
+}
+.app_details_chcklist{
+    width: 20%;
+}
+.app_history_text{
+    width: 80%;
+}
+
+/* --------------------------------------------------------------
+                        Settings-section
+----------------------------------------------------------------- */
+.settings_card{
+    width: 500px;
+}
+.user{
+    font-size: 100px;
+}
+.user_name{
+    font-size: var(--font-size-bold);
+    font-family: "Inter";
+    font-weight: bold;
+    color: var(--font-color-main);
+}
+.hrss{
+    font-size: var(--font-size-bold);
+    color: var(--font-color-light);
+    font-weight: bold;
+}
+.email{
+    font-size: var(--font-size-bold);
+    font-family: "Inter";
+    font-weight: bold;
+    color: var(--font-color-main);
+}
+.FBHO18372{
+    font-size: var(--font-size-bold);
+    color: var(--font-color-light);
+    font-weight: bold;
+}
+.email_notify{
+    font-size: var(--font-size-big);
+    font-weight: bold;
+}
+.update_notify_btn{
+    background: var(--font-color-main);
+    color: var(--button-font-color);
+    font-size: var(--font-size-bold);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+/* --------------------------------------------------------------
+                        Loan-Calculator
+----------------------------------------------------------------- */
+.form_loan{
+    width: 500px;
+}
+.staff_form_width{
+    width: 100%;
+}
+.staff_form_width{
+    width: 70%;
+}
+.form_input_loan_wrapper{
+    width: 200px;
+}
+
+/* app_deatil_grid */
+.app_deatil_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+    /* grid-gap: 20px; */
+    width: 100%;
+}
+
+.app_history_wrapper{
+    width: 80%;
+}
+.right_side{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.8rem;
+}
+.faq_account_icon{
+    margin-top: -0.5rem;
+}
+.faq_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* FAQ */
+.btn_resources{
+    border: none;
+    background: none;
+}
+.faq_nav_menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.no_list{
+    display: flex;
+    gap: 20px;
+}
+.navbar_item{
+    display: flex;
+    gap: 20px;
+}
+
+/* ----------------------------------------------------------------
+                        approval_form
+------------------------------------------------------------------- */
+.approval_form{
+   width: 100%;
+   margin: auto;
+}
+.form_control{
+    width: 250px;
+    padding: 10px 15px;
+    outline: none;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+}
+.form_input_rule{
+    gap: 30px;
+}
+@media screen and (max-width:900px) {
+    .form_input_rule{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .form_control{
+        width: 100%;
+        padding: 10px 15px;
+        outline: none;
+        border: 1px solid #dadada;
+        border-radius: 5px;
+    }
+    .approval_form{
+        width: 300px;
+        margin: auto;
+     }
+}
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------
+                        media-responsive for index
+------------------------------------------------------------------- */
+
+@media screen and (max-width:900px) {
+    .col-1{
+        flex-basis: 40%;
+        background-color: var(--base-color-main);
+        padding: 20px;
+        width: 240px;
+    }
+    .col-2{
+        flex-basis: 80%;
+        background-color: var(--background-color);
+        padding: 20px;
+    }
+    
+}
+@media screen and (max-width:700px) {
+    .col-1{
+        flex-basis: 20%;
+        background-color: var(--base-color-main);
+        padding: 20px;
+    }
+    .col-2{
+        flex-basis: 80%;
+        background-color: var(--background-color);
+        padding: 20px;
+    }
+    
+}
+/* ----------------------------------------------------------------
+                        media-responsive for dashboard
+------------------------------------------------------------------- */
+
+@media screen and (max-width:900px) {
+    .menubar{
+        display: block;
+    }
+    .links{
+        display: none;
+    }
+   .mobile_links .mobile_links_ul{      
+        display: block;
+        list-style: none;
+   }
+   .mobile_links .mobile_links_li{
+        padding: 10px;
+   }
+   .mobile_links .mobile_links_li a{
+        text-decoration: none;
+   }
+   .accounts{
+    display: none;
+   }
+   .loan_calculator{
+    flex-direction: column-reverse;
+}
+.loan_details_wrapper{
+    flex-wrap: wrap;
+}
+.input_loan_form{
+    flex-direction: column;
+    gap: 10px;
+}
+.form_input_loan_wrapper{
+    width: 100%;
+}
+.staff_text_h3_wrapper{
+    display: flex;
+}
+.staff_form_width{
+    width: 100%;
+}
+.app_history{
+    flex-wrap: wrap;
+}
+.app_details{
+    flex-wrap: wrap;
+}
+.app_details_chcklist{
+    width: 50%;
+}
+.faq_navbar{
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.faq_nav_menu .search_inputs{
+    width: 100%;
+}
+.app_checklist{
+    width: 100%;
+}
+.loan_details_content{
+    display: flex;
+    flex-direction: column;
+}
+.hero_btn{
+    width: 100%;
+}
+.app_checklist_wrapper{
+    width: 50%;
+}
+.check_icons{
+    width: 100%;
+}
+.mobile_links_dropdown{
+    display: flex;
+    align-items: center;
+}
+    
+}
+@media screen and (max-width:700px) {
+    .hero_text_h1{
+        font-size: 35px;
+    }
+    .hero_application_loan{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .hero_search_wrapper{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .search_inputs{
+        width: 100%;
+    }
+    .settings_card{
+        width: 100%;
+    }
+    .app_details{
+        flex-wrap: wrap;
+    }
+    .app_details_chcklist{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .app_history_wrapper{
+        width: 100%;
+    }
+   .app_history{
+        flex-wrap: wrap;
+        gap: 20px;
+   }
+   .app_history_text{
+    width: 100%;
+}
+.faq_nav_menu{
+    display: flex;
+    align-items: center;
+}
+}
