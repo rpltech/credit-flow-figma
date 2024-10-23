@@ -205,14 +205,123 @@
                     </div>
                     <div class="">
                         <div class="my-[1rem]">
-                            <p class="hero_text_h1 text-[14px] font-medium">Basic Information</p>
+                            <p class="hero_text_h1 text-[14px] font-medium pb-[15px]">Basic Information</p>
                             <div class="w-full border border-black rounded-[10px] p-[3rem]">
-                                <div class="">
-                                    <label for="name" class="">Name</label>
-                                    <input type="text" name="name" id="name" class="form-control">
-                                </div>
+                               <div class="flex justify-between  max-w-[1000px]">
+                                    <div class="flex items-center gap-[20px] w-[400px]">
+                                        <label for="name" class="">Name</label>
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="Loan Approval SLA">
+                                    </div>
+                                    <div class="flex items-center gap-[20px] w-[400px]">
+                                        <label for="name" class="">Description</label>
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="Loan Approval SLA">
+                                    </div>
+                               </div>
+                               <div class="w-[500px] flex items-center gap-[20px] mt-[1.5rem]">
+                                   <label for="" class="text-nowrap">Application Stages</label>
+                                   <select class="form-select " aria-label="Default select example">
+                                      <div class="">
+                                           <option selected>Application Stages</option>
+                                           <option value="1">HRSS</option>
+                                           <option value="2">HRBP</option>
+                                           <option value="3">HR Director</option>
+                                      </div>
+                                   </select>
+                               </div>
                             </div>
                         </div>
+                        <div class="my-[1rem]">
+                            <p class="hero_text_h1 text-[14px] font-medium pb-[15px]">Timing and Escalation</p>
+                            <div class="w-full   border border-black rounded-[10px] p-[3rem]">                               
+                               <div class="max-w-[1100px] flex justify-between">
+                                <div class="w-[500px] flex items-center gap-[20px] mt-[1.5rem]">
+                                    <label for="" class="text-nowrap">SLA Time Limit</label>
+                                    <select class="form-select " aria-label="Default select example">
+                                       <div class="">
+                                            <option selected>--Select Time Limit--</option>
+                                            <option value="1">24 hours</option>
+                                            <option value="2">36 hours</option>
+                                            <option value="3">48 hours</option>
+                                       </div>
+                                    </select>
+                                </div>
+                                <div class="w-[500px] flex items-center gap-[20px] mt-[1.5rem]">
+                                    <label for="" class="text-nowrap">Escalation Time</label>
+                                    <select class="form-select " aria-label="Default select example">
+                                       <div class="">
+                                            <option selected>--Select Time Limit--</option>
+                                            <option value="1">24 hours</option>
+                                            <option value="2">36 hours</option>
+                                            <option value="3">48 hours</option>
+                                       </div>
+                                    </select>
+                                </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="my-[1rem]">
+                            <p class="hero_text_h1 text-[14px] font-medium pb-[15px]">Notification and Action</p>
+                            <div class="w-full   border border-black rounded-[10px] p-[3rem]">                               
+                               <div class="max-w-[1100px] flex justify-between">
+                                <div class="w-[500px] flex items-center gap-[20px] mt-[1.5rem]">
+                                    <label for="" class="text-nowrap">Notification Settings</label>
+                                    <select class="form-select " aria-label="Default select example">
+                                       <div class="">
+                                            <option selected>--Select Notification Settings--</option>
+                                            <option value="1">On Breach</option>
+                                            <option value="2">Approaching Breach</option>
+                                            <option value="3">Daily Summary</option>
+                                       </div>
+                                    </select>
+                                </div>
+                                <div class="w-[500px] flex items-center gap-[20px] mt-[1.5rem]">
+                                    <label for="" class="text-nowrap">Breach Actions</label>
+                                    <select class="form-select " aria-label="Default select example">
+                                       <div class="">
+                                            <option selected>--Select Breach Actions--</option>
+                                            <option value="1">Notify</option>
+                                            <option value="2">Automatic Reassignment</option>
+                                       </div>
+                                    </select>
+                                </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-[2rem]">
+                        <div class="flex justify-between w-full">
+                            <p class="hero_text_h1 text-[14px] font-medium pb-[15px]">Exclusion Periods</p>
+                            <button class="hero_btn px-[20px] py-[10px] rounded">Add Exclusion</button>
+                        </div>
+
+                        <div class="">
+                            <div class="overflow-auto">
+                                <table class="w-full">
+                                    <thead>
+                                        <tr class=" border-b">
+                                            <th class="whitespace-nowrap tracking-wide p-3">Exclude</th>
+                                            <th class="whitespace-nowrap tracking-wide p-3">From</th>
+                                            <th class="whitespace-nowrap tracking-wide p-3">To</th>
+                                            <th class="whitespace-nowrap tracking-wide p-3">Note</th>
+                                            <th class="whitespace-nowrap tracking-wide p-3">Actions</th>                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="border-b">
+                                            <td class="whitespace-nowrap p-3 font-medium"><input type="checkbox" name="" id=""> </td>
+                                            <td class="whitespace-nowrap p-3 font-medium"><input type="datetime-local" name="" id="" class="form-control"></td>
+                                            <td class="whitespace-nowrap p-3 font-medium"><input type="datetime-local" name="" id="" class="form-control"></td>
+                                            <td class="whitespace-nowrap p-3 font-medium"><input type="text" name="" id="" class="form-control"></td>
+                                            <td class="whitespace-nowrap p-3 text-blue-500 underline font-bold"><a href="">Delete</a></td>                                          
+                                        </tr>                                       
+                                    </tbody>                            
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <p class="hero_text_h1 text-[14px] pb-[5px] font-medium ">Current Exclusions</p>
+                        <p class="hero_text_p text-[10px] pb-[15px]">One Current One-Time Exclusions Periods Defined</p>
                     </div>
                 </div>
                 
